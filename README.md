@@ -1,0 +1,1 @@
+This is a flask learning project i am just checking different things and how i can use this.
