@@ -1,3 +1,5 @@
+import datetime
+
 from flask import Flask
 from flask import render_template
 
@@ -9,7 +11,7 @@ my_name = "Rana Universe"
 
 @app.route("/")
 def index():
-    return "Index Page"
+    return render_template("home.html", utc_dt=datetime.datetime.now())
 
 
 @app.route("/hello")
